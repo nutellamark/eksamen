@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Studie Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu" class="menu">
+                <li><a href="#home">Forside</a></li>
+                <li><a href="#portfolio">Din Portfolio</a></li>
+                <li><a href="#about">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Velkommen til min studieportfolio</h1>
+        <p>En kort beskrivelse af dig selv og dine færdigheder.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Din Portfolio</h2>
+        <!-- Her kan du tilføje dit portfolioindhold, som f.eks. projekter, billeder, osv. -->
+    </section>
+
+    <section id="about" class="section">
+        <h2>Om mig</h2>
+        <p>En længere beskrivelse af dig selv, din uddannelse, erfaring og interesser.</p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

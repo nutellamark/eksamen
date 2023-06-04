@@ -1,0 +1,79 @@
+/* Generelle stilarter */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Navigationsmenu */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/* Responsivitet */
+@media only screen and (max-width: 768px) {
+  .navbar li {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.show {
+    display: block;
+  }
+}
