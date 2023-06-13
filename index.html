@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Studie Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="burger-menu" onclick="toggleMenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <ul id="menu" class="menu">
-                <li><a href="#home">Forside</a></li>
-                <li><a href="#portfolio">Din Portfolio</a></li>
-                <li><a href="#about">Om mig</a></li>
+            <a href="#" class="nav-branding">Eksamen</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Forside</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="om-mig.html" class="nav-link">Om mig</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         </nav>
     </header>
-
-    <section id="home" class="section">
-        <h1>Velkommen til min studieportfolio</h1>
-        <p>En kort beskrivelse af dig selv og dine færdigheder.</p>
-    </section>
-
-    <section id="portfolio" class="section">
-        <h2>Din Portfolio</h2>
-        <!-- Her kan du tilføje dit portfolioindhold, som f.eks. projekter, billeder, osv. -->
-    </section>
-
-    <section id="about" class="section">
-        <h2>Om mig</h2>
-        <p>En længere beskrivelse af dig selv, din uddannelse, erfaring og interesser.</p>
-    </section>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("show");
-        }
-    </script>
+    <main>
+        <div class="grid">
+            <h1>Det her er min portfolio eksamen</h1>
+            <p></p>
+            <h3>Du kan klikke på Forside, Portfolio eller Om mig for at komme ind på de forskellige sider.</h3>
+        </div>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
